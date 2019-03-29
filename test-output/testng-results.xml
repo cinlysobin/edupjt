@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="WebDriver" duration-ms="4713" started-at="2019-03-29T02:04:47Z" finished-at="2019-03-29T02:04:52Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="4713" started-at="2019-03-29T02:04:47Z" finished-at="2019-03-29T02:04:52Z">
+      <class name="testng.verifyphpsite">
+        <test-method status="PASS" signature="launch()[pri:0, instance:testng.verifyphpsite@5e5792a0]" name="launch" is-config="true" duration-ms="4560" started-at="2019-03-29T02:04:47Z" finished-at="2019-03-29T02:04:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method status="PASS" signature="about()[pri:0, instance:testng.verifyphpsite@5e5792a0]" name="about" duration-ms="115" started-at="2019-03-29T02:04:52Z" finished-at="2019-03-29T02:04:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- about -->
+        <test-method status="PASS" signature="close()[pri:0, instance:testng.verifyphpsite@5e5792a0]" name="close" is-config="true" duration-ms="1" started-at="2019-03-29T02:04:52Z" finished-at="2019-03-29T02:04:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testng.verifyphpsite -->
+    </test> <!-- Test -->
+  </suite> <!-- WebDriver -->
+</testng-results>
