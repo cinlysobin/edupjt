@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [testng.verifyphpsiteTest]">
+  <test thread-count="5" verbose="0" name="Command line test(failed)">
+    <classes>
+      <class name="testng.verifyphpsiteTest">
+        <methods>
+          <include name="close"/>
+          <include name="launch"/>
+          <include name="about"/>
+        </methods>
+      </class> <!-- testng.verifyphpsiteTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [testng.verifyphpsiteTest] -->

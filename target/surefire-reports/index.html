@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-testng.verifyphpsiteTest">
-              <span class="suite-name border-passed">testng.verifyphpsiteTest</span>
+              <span class="suite-name border-failed">testng.verifyphpsiteTest</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-testng.verifyphpsiteTest" class="hide-methods passed suite-testng.verifyphpsiteTest"> (hide)</a> <!-- hide-methods passed suite-testng.verifyphpsiteTest -->
-                      <a href="#" panel-name="suite-testng.verifyphpsiteTest" class="show-methods passed suite-testng.verifyphpsiteTest"> (show)</a> <!-- show-methods passed suite-testng.verifyphpsiteTest -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-testng.verifyphpsiteTest" class="hide-methods failed suite-testng.verifyphpsiteTest"> (hide)</a> <!-- hide-methods failed suite-testng.verifyphpsiteTest -->
+                      <a href="#" panel-name="suite-testng.verifyphpsiteTest" class="show-methods failed suite-testng.verifyphpsiteTest"> (show)</a> <!-- show-methods failed suite-testng.verifyphpsiteTest -->
                     </span>
-                    <div class="method-list-content passed suite-testng.verifyphpsiteTest">
+                    <div class="method-list-content failed suite-testng.verifyphpsiteTest">
                       <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-testng.verifyphpsiteTest" title="testng.verifyphpsiteTest" hash-for-method="about">about</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-testng.verifyphpsiteTest -->
+                    </div> <!-- method-list-content failed suite-testng.verifyphpsiteTest -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,9 +117,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-testng.verifyphpsiteTest" class="panel testng.verifyphpsiteTest">
-          <div class="suite-testng.verifyphpsiteTest-class-passed">
+          <div class="suite-testng.verifyphpsiteTest-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">testng.verifyphpsiteTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -128,10 +128,36 @@
                   <a name="about">
                   </a> <!-- about -->
                   <span class="method-name">about</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@id=&apos;About Us&apos;]&quot;}
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.0&apos;, revision: &apos;2ecb7d9a&apos;, time: &apos;2018-10-31T20:09:30&apos;
+System info: host: &apos;DESKTOP-MEO2EG1&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: C:\Users\Cinly\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:62946}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
+Session ID: 9cfb67dd4e7597b29142bb2865aa3bf0
+*** Element info: {Using=xpath, value=//a[@id=&apos;About Us&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at testng.verifyphpsiteTest.about(verifyphpsiteTest.java:27)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-testng.verifyphpsiteTest-class-passed -->
+          </div> <!-- suite-testng.verifyphpsiteTest-class-failed -->
         </div> <!-- panel testng.verifyphpsiteTest -->
         <div panel-name="test-xml-testng.verifyphpsiteTest" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -187,12 +213,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'about')
 data.setCell(0, 2, 'testng.verifyphpsiteTest')
-data.setCell(0, 3, 107);
+data.setCell(0, 3, 30204);
 window.suiteTableData['testng.verifyphpsiteTest']= { tableData: data, tableDiv: 'times-div-testng.verifyphpsiteTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 107 ms</span>
+              <span class="suite-total-time">Total running time: 30 seconds</span>
               <div id="times-div-testng.verifyphpsiteTest">
               </div> <!-- times-div-testng.verifyphpsiteTest -->
             </div> <!-- times-div -->
@@ -224,12 +250,14 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">about</span>
-                <span class="method-start">4408 ms</span>
+                <span class="method-start">38719 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">4516 ms</span>
+                <span class="method-start">68927 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
