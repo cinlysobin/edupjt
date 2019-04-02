@@ -20,7 +20,7 @@ public class verifyphpsiteTest {
        driver=new ChromeDriver();
        driver.manage().window().maximize();
        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-       driver.get("http://192.168.0.101/index.php");    
+       driver.get("http://192.168.0.101:32771/index.php");    
    }
    @Test
    public void about() {
